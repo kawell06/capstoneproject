@@ -1,0 +1,81 @@
+
+#main-header {
+    border: 1.3px solid black;
+    text-align: center;
+}
+#primary-content {
+    border: 1.3px solid rgb(69, 105, 104);
+    text-align: center;
+}
+
+#footer {
+    padding-bottom: 50px;
+    border-bottom: solid 10px black;
+
+}
+
+body {
+text-align: center;
+font-family: "Helvetica";
+background-color: whitesmoke;
+padding-right:500px;
+padding-left: 50px;
+}
+
+h1,
+h2 {
+    font-family: "Helvetica";
+    font-size: 25px;
+    color: rgba(150,150,150,2)
+    text-transform: lowercase;
+    line-height: 1;
+    padding-left:50;
+    margin: 12px 1 1;
+}
+
+
+/* Pseudo-classes --*/
+    a:link {
+        color: black
+}
+
+    a:visited{
+        color: rgb(148, 118, 118)
+    }
+    a:hover {
+        color: lightskyblue
+    }
+
+    a:focus {
+        color: black;
+        background-color:white;
+
+    }
+
+    
+    
+    /* Main Styles -- */
+
+    div {
+        background: #466368;
+        background:         radial-gradient(#648880, #293f50);
+      }
+      
+.main image {
+    padding-top: 110px;
+    height: 200px;
+    width: 120px;
+    border-style: 5px solid;
+   
+}
+.title {
+    color:
+    font-size:
+    letter-spacing:
+    font-weight:
+    border-bottom:
+    padding-bottom:
+
+}
+
+
