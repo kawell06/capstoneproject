@@ -1,46 +1,91 @@
 
+/****** Base Styles ******/
+
 #main-header {
-    border: 1.3px solid black;
-    text-align: center;
-}
-#primary-content {
-    border: 1.3px solid rgb(69, 105, 104);
-    text-align: center;
+    text-align: center-right;
+    padding: 2px;
 }
 
 #footer {
+    text-align: center;
     padding-bottom: 50px;
-    border-bottom: solid 10px black;
+    border-bottom: solid 2px black;
+}
 
+/***** Main Styles ******/
+
+main header,
+main image,
+body{
+    background: #466368;
+    background-image: radial-gradient(#648880, #293f50);
+      }
+      
+.main image {
+    padding-top: 110px;
+    height: 250px;
+    width: 120px;
+    border-style: 5px solid;
+   
 }
 
 body {
-text-align: center;
-font-family: "Helvetica";
-background-color: whitesmoke;
-padding-right:500px;
-padding-left: 50px;
+    text-align: center;
+    font-family: "Helvetica";
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
     font-family: "Helvetica";
     font-size: 25px;
     color: rgba(150,150,150,2)
     text-transform: lowercase;
     line-height: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left:50;
     margin: 12px 1 1;
 }
 
+header .profile-image {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 200px;
+        height: 250px;
+        border-radius: 80%;
+        border: 3px radial-gradient(#648880, #293f50);
+}
 
-/* Pseudo-classes --*/
+/***** Navigation ******/
+
+.main-nav {
+    margin-top: 5px;
+    list-style: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline-block;
+    margin-left: 19px;
+}
+
+
+
+/***** Pseudo-classes ********/
+
     a:link {
         color: black
 }
 
     a:visited{
-        color: rgb(148, 118, 118)
+        color: rgb(3, 3, 3)
     }
     a:hover {
         color: lightskyblue
@@ -52,30 +97,117 @@ h2 {
 
     }
 
-    
-    
-    /* Main Styles -- */
+/***** Contact Form Styles ********/
 
-    div {
-        background: #466368;
-        background:         radial-gradient(#648880, #293f50);
-      }
-      
-.main image {
-    padding-top: 110px;
-    height: 200px;
-    width: 120px;
-    border-style: 5px solid;
-   
-}
-.title {
-    color:
-    font-size:
-    letter-spacing:
-    font-weight:
-    border-bottom:
-    padding-bottom:
+.form-class {
+    display: none;
+    text-align: left;
+    }
+
+.form-container {
+background-color: white;
+max-width: 500px;
+padding: 30px;
+margin: 0 auto;
 
 }
 
+.form-container input[type=text], .form-container input[type=email], .form-container textarea[id=message] {
+width: 100%;
+padding: 15px 0px 15px 5px;
+margin: 5px 0 22px 0;
+margin-left: 2px;
+border: none;
+background: #f1f1f1;
+}   
 
+.contactForm {
+    margin: 15px;
+    color: white;
+    display: none; 
+    position: fixed;
+}
+
+label{
+    height: 30px;
+}
+
+.button {
+    font-size: 15px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%; 
+    background-color: grey;
+    color: white
+}
+
+.closebutton {
+    background-color: #ff0000;
+    font-size: 15px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    color: white;
+}
+
+.button:hover, 
+.closebutton:hover {
+    background: black;
+}
+
+/***** Flex Styles. Lives at the bottom (roadblock)****/
+
+.row {
+    display: flex;
+  }
+
+.column {
+    float: left;
+    width: 75%;
+    padding: 5px;
+  }
+
+  style="width:100%"
+
+
+/***** Media queries ********/
+@media screen and (min-width: 769px) {
+  
+    .flex {
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-around;
+        margin: 5 auto;
+    }
+  
+    header {
+      min-height: 200px;
+    }
+  
+    .nav {
+      max-width: 1200px;
+    }
+  
+    .nav .name {
+      display: block;
+      margin-right: auto;
+    }
+  
+    main {
+      padding-top: 50px;
+    }
+  
+    main p {
+      line-height: 2.3em;
+    }
+  
+    footer {
+      font-size: 1.3em;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+  
+  }
+  

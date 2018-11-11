@@ -1,0 +1,39 @@
+
+/***** Contact Form Styles ********/
+
+.form-class {
+    display: none;
+    
+    }
+
+.contactform {
+    margin: 15px;
+    text-color: white;
+    display: none; 
+    position: fixed;
+}
+
+label{
+    height: 30px;
+}
+
+button {
+    background-color: #293f50;
+    font-size: 15px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%; 
+}
+
+.contact .closebutton {
+    background-color: #ff0000;
+    font-size: 15px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}s
+
+button:hover {
+    opacity: 0.8;

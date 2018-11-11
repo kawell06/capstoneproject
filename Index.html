@@ -1,59 +1,130 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title> My Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="normalize.css">
-            <link rel="stylesheet" href="style.css">   
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="assets">
+
     </head>
+
     <body>
-            <header id="top" class="main-header">
-                <div id="main-header">
-            <h1>K.well Wardrobe Designs</h1>
-                </div>
-            <img class="main image" src="Assets/yougotthis 2.jpg" alt="background image">
-         <nav>
-            <ul class="nav">
-            <li><a href="#">home</a></li>
-            <li><a href="#">style</a></li>
-            <li><a href="#">projects</a></li>  
-            <li><a href="#">about me</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
-    </nav>
-    </header>
-            <div id="primary-content">
-                    <a class="callouts" href="#about">Lets work together</a>
-            <p>This is my first website build. Here I go.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>        
+
+        <header id="top" class="main-header">
+        <div id="main-header">
+             <h1 class="name"><a href="#">K.well Wardrobe Designs</a></h1>
+             <img src="Assets/profile_image.png" alt="Me" class="profile-image">
+
+            <nav>
+                <ul class="nav">
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">About</a></li>
+                        <li> <a href="#" onclick="openForm()">Contact</a></li>
+                </ul>
+            </nav>
+    </div>
+
+    <!---Contact Form -->
+
+    <div class="form-class" id="contactForm"> 
+        <form action="Index.html" class="form-container">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="visitor_name" placeholder="Enter Name">
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="visitor_email" placeholder="Enter Email">
             
-        </div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="visitor_message" placeholder="Add Message"></textarea>
+    
+                <button type="submit" class="button">Submit</button>
+                <button type="submit" class="closebutton" onclick="closeForm()">Cancel</button>
+
+        </form>
+</div>   <!---End Contact Form -->
+
+</header> <!--header-->
+
+
+        <div id="primary-content">       
+
             <div class="Designs">
-                <h2>Check out my wardrobe designs</h2>
-                <img src="Assets/April-Mood-Board-Colour-Palette-EclecticTrends 2.jpg" alt="Mood Board">
+                <h2>Concepts</h2>
+                <img src="Assets/vision.png" alt="Vision" class="Designs">
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                 </p>
-            </div> <!--End. Designs-->
+            </div> 
+        </div><!--End. Designs-->
 
-            <a class="callout" href="#k.welldesigns">My Vision</a>
-        </div><!--End main content-->
 
         <div class="Brand Board">
-            <h2>Brand Styling Projects</h2>
+            <h3>Brand Projects</h3>
             <img src="Assets/jcrew.jpg" alt="Brand Board">
+                <ul>
+                    <li><a href="#brand-concepts">Brand Concepts</a></li>
+                </ul>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
             </p>
-            <ul>
-                <li><a href="#brand-concepts">Brand Concepts</a></li>
-                <li><a href="#inspiration">Wardrobe Inspiration</a></li>
-                <li><a href="#final-product">Final Wardrobe Look</a></li>
-            </ul>
-
         </div> <!--End. Brand Board-->
 
 
+        <div class="Inspiration Boards">
+                <h4>Inspiration</h3>
+                <img src="Assets/April-Mood-Board-Colour-Palette-EclecticTrends 2.jpg" alt="Mood Board">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+            </div> <!--End. Brand Board-->
+
+            <!--Flex images -->
+
+                <div class="row">
+                    <div class="column">
+                        <div class="style"></div>
+                      <img src="Assets/vision.png" alt="Vision" class="responsive" style="width:100%">
+                </div>
+                    <div class="column">
+                      <img src="Assets/jcrew.jpg" alt="Brand Bord" style="width:100%">
+                    </div>
+                    <div class="column">
+                      <img src="Assets/April-Mood-Board-Colour-Palette-EclecticTrends 2.jpg" alt="Mood Board" style="width:100%">
+                    </div>
+                  </div>
+
+
     <footer id="footer">
-        <a href="#top">Back to the top</a>
+
+            <!--Icons-->
+
+            <a href="https://www.facebook.com/kaitlyn.wellendorff">
+            <img src="Assets/if_Asset_26_2190910.png" title="Facebook" alt="Facebook" width="8%"/>
+            </a>
+
+            <a href="https://www.instagram.com/">
+                <img src="Assets/if_38-instagram_1161953.png" title="Instagram" alt="Instagram" width="8%"/>
+                </a>
+
+            <a href="https://www.pinterest.com/kaitwell/">
+                    <img src="Assets/if_Asset_28_2190909.png" title="Pinterest" alt="Pinterest" width="8%"/>
+                    </a>
+
+        </footer> <!--End main content-->
         
-    </footer>
+<script>
+        function openForm() {
+            document.getElementById("contactForm").style.display="block";
+            
+            }
+            
+            function closeForm() {
+                document.getElementById("contactForm").style.display="none";
+                
+                }
+            
+</script>
+            
+
 </body>
 </html>
