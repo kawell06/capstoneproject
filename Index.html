@@ -7,11 +7,11 @@
             <link rel="stylesheet" href="normalize.css">
             <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="assets">
+    
 
     </head>
 
     <body>
-
         <header id="top" class="main-header">
         <div id="main-header">
              <h1 class="name"><a href="#">K.well Wardrobe Designs</a></h1>
@@ -24,9 +24,15 @@
                         <li> <a href="#" onclick="openForm()">Contact</a></li>
                 </ul>
             </nav>
-    </div>
+        </div>
 
-    <!---Contact Form -->
+    <!--- Contact Form 
+    * Three fields requested: name, email and message
+    * Placeholder text included
+    * Clicking the submit button will submit the user details
+    * Clicking the clsoe button will close out of the form
+    -->
+   
 
     <div class="form-class" id="contactForm"> 
         <form action="Index.html" class="form-container">
@@ -44,41 +50,50 @@
                 <button type="submit" class="closebutton" onclick="closeForm()">Cancel</button>
 
         </form>
-</div>   <!---End Contact Form -->
+    </div>  
+     
+    <!---End Contact Form -->
 
-</header> <!--header-->
-
+</header>
+ <!--- header 
+    * Three primary content areas
+    --->
 
         <div id="primary-content">       
 
             <div class="Designs">
-                <h2>Concepts</h2>
+                <h2><a href="#">Concepts</a></h2>
                 <img src="Assets/vision.png" alt="Vision" class="Designs">
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                 </p>
             </div> 
-        </div><!--End. Designs-->
+        </div>
+        
+        <!--End. Designs-->
 
 
         <div class="Brand Board">
-            <h3>Brand Projects</h3>
-            <img src="Assets/jcrew.jpg" alt="Brand Board">
-                <ul>
-                    <li><a href="#brand-concepts">Brand Concepts</a></li>
-                </ul>
+            <h3><a href="#">Brand Projects</a></h3>
+            <img src="Assets/project.png" alt="Brand Board">
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
             </p>
-        </div> <!--End. Brand Board-->
+        </div> 
+        
+        <!--End. Brand Board-->
 
-
-        <div class="Inspiration Boards">
-                <h4>Inspiration</h3>
-                <img src="Assets/April-Mood-Board-Colour-Palette-EclecticTrends 2.jpg" alt="Mood Board">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        <div class="Inspiration">
+                <h4><a href="#">Inspiration</a></h3>
+                <img src="Assets/moodboard.png" alt="Mood Board">
+               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                 </p>
-            </div> <!--End. Brand Board-->
+            </div> 
+            
+        <!--End. Brand Board-->
 
-            <!--Flex images -->
+
+         <!--Flex images 
+        * Side-by-side related content for 
+        -->
 
                 <div class="row">
                     <div class="column">
@@ -86,17 +101,20 @@
                       <img src="Assets/vision.png" alt="Vision" class="responsive" style="width:100%">
                 </div>
                     <div class="column">
-                      <img src="Assets/jcrew.jpg" alt="Brand Bord" style="width:100%">
+                      <img src="Assets/project.png" alt="Brand Bord" style="width:100%">
                     </div>
                     <div class="column">
-                      <img src="Assets/April-Mood-Board-Colour-Palette-EclecticTrends 2.jpg" alt="Mood Board" style="width:100%">
+                      <img src="Assets/moodboard.png" alt="Mood Board" style="width:100%">
                     </div>
                   </div>
 
 
     <footer id="footer">
 
-            <!--Icons-->
+
+        <!--Icons
+        * Facebook, Instagram and Pinterest icons with links
+        -->
 
             <a href="https://www.facebook.com/kaitlyn.wellendorff">
             <img src="Assets/if_Asset_26_2190910.png" title="Facebook" alt="Facebook" width="8%"/>
@@ -110,20 +128,14 @@
                     <img src="Assets/if_Asset_28_2190909.png" title="Pinterest" alt="Pinterest" width="8%"/>
                     </a>
 
-        </footer> <!--End main content-->
+        </footer> 
         
-<script>
-        function openForm() {
-            document.getElementById("contactForm").style.display="block";
-            
-            }
-            
-            function closeForm() {
-                document.getElementById("contactForm").style.display="none";
-                
-                }
-            
-</script>
+        <!--End main content-->
+        
+        <!--
+            *Link to JS file
+        -->
+        <script src="contactform.js"></script>
             
 
 </body>

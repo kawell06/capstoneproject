@@ -12,21 +12,20 @@
     border-bottom: solid 2px black;
 }
 
-/***** Main Styles ******/
+/***** Main Body Styles ******/
 
 main header,
 main image,
 body{
     background: #466368;
-    background-image: radial-gradient(#648880, #293f50);
+    background-image: radial-gradient(#5a7e77, #293f50);
       }
       
 .main image {
     padding-top: 110px;
     height: 250px;
     width: 120px;
-    border-style: 5px solid;
-   
+    border-style: 5px solid; 
 }
 
 body {
@@ -58,6 +57,7 @@ header .profile-image {
         border: 3px radial-gradient(#648880, #293f50);
 }
 
+
 /***** Navigation ******/
 
 .main-nav {
@@ -76,13 +76,11 @@ li {
     margin-left: 19px;
 }
 
-
-
 /***** Pseudo-classes ********/
 
     a:link {
-        color: black
-}
+        color: black 
+    }
 
     a:visited{
         color: rgb(3, 3, 3)
@@ -94,8 +92,8 @@ li {
     a:focus {
         color: black;
         background-color:white;
-
     }
+
 
 /***** Contact Form Styles ********/
 
@@ -105,20 +103,19 @@ li {
     }
 
 .form-container {
-background-color: white;
-max-width: 500px;
-padding: 30px;
-margin: 0 auto;
-
+    background-color: white;
+    max-width: 500px;
+    padding: 30px;
+    margin: 0 auto;
 }
 
 .form-container input[type=text], .form-container input[type=email], .form-container textarea[id=message] {
-width: 100%;
-padding: 15px 0px 15px 5px;
-margin: 5px 0 22px 0;
-margin-left: 2px;
-border: none;
-background: #f1f1f1;
+    width: 100%;
+    padding: 15px 0px 15px 5px;
+    margin: 5px 0 22px 0;
+    margin-left: 2px;
+    border: none;
+    background: #f1f1f1;
 }   
 
 .contactForm {
@@ -143,7 +140,7 @@ label{
 }
 
 .closebutton {
-    background-color: #ff0000;
+    background-color: tomato;
     font-size: 15px;
     height: 30px;
     cursor: pointer;
@@ -157,7 +154,8 @@ label{
     background: black;
 }
 
-/***** Flex Styles. Lives at the bottom (roadblock)****/
+
+/***** Flex Styles at bottom ****/
 
 .row {
     display: flex;
@@ -173,6 +171,7 @@ label{
 
 
 /***** Media queries ********/
+
 @media screen and (min-width: 769px) {
   
     .flex {
@@ -180,6 +179,7 @@ label{
         max-width: 1200px;
         justify-content: space-around;
         margin: 5 auto;
+        height: auto;
     }
   
     header {
