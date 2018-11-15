@@ -1,5 +1,7 @@
 
-/****** Base Styles ******/
+/* ============
+  Base Styles 
+============= */
 
 #main-header {
     text-align: center-right;
@@ -10,9 +12,14 @@
     text-align: center;
     padding-bottom: 50px;
     border-bottom: solid 2px black;
+    font-size: 1.3em;
+    max-width: 1200px;
+
 }
 
-/***** Main Body Styles ******/
+/* ============
+  Main Body Styles
+============= */
 
 main header,
 main image,
@@ -57,8 +64,18 @@ header .profile-image {
         border: 3px radial-gradient(#648880, #293f50);
 }
 
+.img {
+    max-width: 100%;
+  }
 
-/***** Navigation ******/
+.caption { 
+    font-size: 15px; 
+    font-style: Helvetica;
+  }
+
+/* ============
+ Navigation
+============= */
 
 .main-nav {
     margin-top: 5px;
@@ -76,7 +93,9 @@ li {
     margin-left: 19px;
 }
 
-/***** Pseudo-classes ********/
+/* ============ Pseudo-classes 
+* Styles based on user interaction with links
+============ */
 
     a:link {
         color: black 
@@ -94,8 +113,9 @@ li {
         background-color:white;
     }
 
-
-/***** Contact Form Styles ********/
+/* ============ 
+Pop-up Contact Form Styles 
+============ */
 
 .form-class {
     display: none;
@@ -154,60 +174,38 @@ label{
     background: black;
 }
 
-
-/***** Flex Styles at bottom ****/
+/* ============ 
+Flex Styles
+============ */
 
 .row {
     display: flex;
   }
 
-.column {
-    float: left;
-    width: 75%;
-    padding: 5px;
-  }
+/* ============ 
+Media queries 
+============ */
 
-  style="width:100%"
+@media screen and (min-width: 380px) {
+  
+    .flex-container { 
+      display: block; 
+    }
 
-
-/***** Media queries ********/
-
-@media screen and (min-width: 769px) {
-  
-    .flex {
-        display: flex;
-        max-width: 1200px;
-        justify-content: space-around;
-        margin: 5 auto;
-        height: auto;
+    .flex-div { 
+      padding: 2% 6%; 
     }
-  
-    header {
-      min-height: 200px;
+    
+  @media (min-width: 860px) { 
+    .flex-container { 
+      display: flex; 
+      justify-content: space-around;
+      flex-direction: row;
     }
-  
-    .nav {
-      max-width: 1200px;
+    
+    .flex-div { 
+      width: 30%; 
+      padding: 2%; 
     }
-  
-    .nav .name {
-      display: block;
-      margin-right: auto;
-    }
-  
-    main {
-      padding-top: 50px;
-    }
-  
-    main p {
-      line-height: 2.3em;
-    }
-  
-    footer {
-      font-size: 1.3em;
-      max-width: 1200px;
-      margin: 40px auto;
-    }
-  
   }
   
